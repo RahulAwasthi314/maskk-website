@@ -1,0 +1,211 @@
+div {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/* nav bar css */
+.nav-bar {
+    display: flex;
+    background-color: rgba(31, 41, 53, 0.51);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    padding: 0.7% 0%;
+}
+
+.nav-bar .title {
+    margin: 0% 0% 0% 7%;
+    font-size: 200%;
+}
+
+.nav-bar .title:hover {
+    color: orange;
+}
+
+.nav-bar .menu {
+    float: right;
+    display: inline-flex;
+    margin: 0% 0% 0% 50%;
+}
+
+.nav-bar .menu div {
+    margin: 0% 0% 0% 11%;
+    padding: 3% 0%;
+    font-size: 120%;
+    font-weight: 70%;
+}
+
+.nav-bar .menu div:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.reflect {
+        -webkit-box-reflect: right;
+        display: Inline-block;
+}
+
+.title:hover {
+    color: red;
+    /* i want to hover on title and want to transform the reflect div */
+    /* i think i need to use the js for this purpose */
+}
+
+
+
+/* main content css */
+
+.main-content-img {
+    background-image: url("/assets/back-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #000;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: -2;
+}
+
+.main-content-img .site-tagline {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 400%;
+    text-align: center;   
+    
+}
+
+
+.main-content-img .subtitle {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 80%;
+    text-align: center;  
+    font-style: italic; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+/* newsletter */
+.newsletter {
+    padding: 50px;
+    background-color: #E8E7E7;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter .letter {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.letter-txt {
+    padding-bottom: 20px;
+}
+.email {
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.email:focus {
+    outline: none;
+}
+.email:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: .7s;
+}
+
+.email:focus +  div {
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(1);
+    transition: all .7s ease-out;  
+}
+
+.rular {
+    width: 300px;
+    height: 1px;
+    background-color: grey;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+.submit-button:hover {
+    transform: scale(1.09);
+    transition: 100ms ease-in;   
+}
+
+
+
+
+/* footer css */
+.footer {
+    margin: 50px 20px;
+    text-align: center;
+}
+
+/* make the footer followed in full screen */
+
+.footer .footer-title {
+    font-size: 125%;
+    text-transform: uppercase;
+}
+
+.footer div {
+    text-transform: capitalize;
+}
+
+
+/* footer grid */
+.grid-header {
+    margin: 0px 0px;
+    text-align: left;
+}
+
+.grid-header div {
+    font-size: 12px;
+}
+
+.grid-icon {
+    font-size: 16px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17% 5%;
+    margin-bottom: 30px;
+}
+
+.footer-logo{
+    width: 10%;
+    margin: 0 auto;
+}
+
+.footer-footer {
+    font-size: 12px;
+}
+

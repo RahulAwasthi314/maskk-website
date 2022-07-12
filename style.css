@@ -118,6 +118,72 @@ body {
 }
 
 
+/* prduct cards */
+.four-product-card {
+    display: flex;
+}
+
+.product-card {
+    width: 25%;
+    padding: 23px;
+}
+
+.new-in {
+    margin: 0 auto;
+    width: 110px;
+    text-transform: uppercase;
+    font-size: 30px;
+    word-spacing: 1.2px;
+}
+
+.prdct-pic {
+    background-image: url("https://maskk.com/wp-content/uploads/2022/01/Z62_3644-324x432.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.prdct-pic img {
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.prdct-size {
+    display: flex;
+}
+
+.prdct-title, .prdct-price, .prdct-size {
+    width: 200%%;
+}
+
+.prdct-size div {
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+    background-color: pink;
+    color: black;
+    text-align: center;
+    border-color: yellowgreen;
+    box-shadow: blue;
+    /* font-size: em; */
+    margin: 10px auto;
+}
+
+.prdct-option {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
 
 /* newsletter */
 .newsletter {

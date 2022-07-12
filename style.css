@@ -94,6 +94,28 @@ body {
 }
 
 
+.second-tagline {
+    text-align: center;
+    background-color: #E8E7E7;
+    padding: 10px;
+}
+.shop-now {
+    margin: 0 auto 15px auto;
+    /* margin-bottom: 16px; */
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    width: 100px;
+}
+.shop-now a {
+    text-decoration: none;
+    color: white;
+}
+
+.shop-now:hover {
+    transform: scale(1.09);
+    transition: 100ms ease-in; 
+}
 
 
 

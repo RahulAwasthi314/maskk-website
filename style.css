@@ -18,6 +18,7 @@ body {
     width: 100%;
     position: fixed;
     padding: 0.7% 0%;
+    z-index: 10;
 }
 
 .nav-bar .title {
@@ -123,6 +124,10 @@ body {
     display: flex;
 }
 
+.prod-desc{
+    text-align: center;
+}
+
 .product-card {
     width: 25%;
     padding: 23px;
@@ -137,7 +142,6 @@ body {
 }
 
 .prdct-pic {
-    background-image: url("https://maskk.com/wp-content/uploads/2022/01/Z62_3644-324x432.jpg");
     height: auto;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -148,13 +152,15 @@ body {
     justify-content: center;
 
 }
+.prdct-title, .prdct-price{
+    width: 100%;
+    text-align: center;
+}
 
 .prdct-size {
     display: flex;
-}
-
-.prdct-title, .prdct-price, .prdct-size {
-    width: 200%;
+    margin-left: 25%;
+    margin-bottom: 5px;
 }
 
 .prdct-size div {
@@ -162,13 +168,19 @@ body {
     line-height: 40px;
     -moz-border-radius: 30px; /* or 50% */
     border-radius: 30px; /* or 50% */
-    background-color: pink;
-    color: black;
+    color: rgba(128, 128, 128, 0.775);
     text-align: center;
     border-color: yellowgreen;
     box-shadow: blue;
+    border: 3px solid rgba(128, 128, 128, 0.775);
     /* font-size: em; */
-    margin: 10px auto;
+    margin: 10px;
+}
+
+.prdct-size div:hover{
+    border: 3px solid black;
+    color: black;
+    transition: all 0.3s ease;
 }
 
 .prdct-option {
@@ -196,37 +208,104 @@ body {
 
 /* bacterial proficiency image css */
 .bact-free-banner {
-    background-image: url(https://maskk.com/wp-content/uploads/2021/12/banner-bfe-2022-min.jpg);
-    margin: 50px;
-}
+    background-image: url('https://maskk.com/wp-content/uploads/2021/12/banner-bfe-2022-min.jpg');
+    margin: 0px 25px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+.banner-text{
+    margin-left: 7%;
+    padding-top: 10%;
+}
 .bact-percent {
     font-size: 50px;
+
 }
 
 .bact-text {
-    font-size: 43px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.banner-icon{
+    display: flex;
+}
+.banner-icon div{
+    padding: 15px;
+}
+
+.banner-btn{
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+.banner-btn:hover{
+    transform: scale(1.09);
+    transition: 0.4s ease;
 }
 
 .middle-banner {
-    background-image: url(https://maskk.com/wp-content/uploads/2021/06/img-saldos.jpg);
-    width: 30vw;
-    height: 100vh;
+
+    height: 650px;
     background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: -1;
+    
 }
 
 .banner-shop-text {
     font-size: 37px;
+    font-weight: 400;
+}
+
+.middle-four-banner{
+    display: flex;
 }
 .banner-mask-text {
     font-size: 40px;
-    font-weight: 120%;
+    font-weight: 600;
     margin-bottom: 20px;
 }
+
+.middle-desc{
+    /* width: 100%; */
+    text-align: center;
+    transform: translate(50% ,-150%);
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+.middle-desc input{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;    
+}
+
 
 .mask-squad {
     background-image: url(https://maskk.com/wp-content/themes/maskk/img/maskk-squad-desktop.jpg);
     font-size: 123px;
+    padding-left: 7%;
 }
 
 .mask-squad a {
@@ -243,6 +322,46 @@ body {
 
 .mask-squad a:hover {
     background-color: #d1bc3e;
+}
+
+.shop-wrapper{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.shop-wrapper img{
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.shop-desc{
+    position: relative;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.shop-btn{
+    margin-top: 50px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.shop-btn:hover{
+    background-color: yellow;
+    border: 2px solid yellow;
+    color: black;
 }
 
 .share-your-mask {

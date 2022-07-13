@@ -224,6 +224,57 @@ body {
     margin-bottom: 20px;
 }
 
+.mask-squad {
+    background-image: url(https://maskk.com/wp-content/themes/maskk/img/maskk-squad-desktop.jpg);
+    font-size: 123px;
+}
+
+.mask-squad a {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px !important;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mask-squad a:hover {
+    background-color: #d1bc3e;
+}
+
+.share-your-mask {
+    font-size: 23px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 0 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* product quality css */
+.product-quality {
+    padding-top: 15px;
+    display: flex;
+    background-color: #E8E7E7;
+}
+
+.product-quality > p {
+    font-size: 23px;
+
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.icon + p {
+    padding: 5px;
+    padding-top: 0px !important; 
+}
 
 /* newsletter */
 .newsletter {
